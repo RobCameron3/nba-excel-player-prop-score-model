@@ -2,7 +2,7 @@
 
 This Excel model simulates **NBA player stats and game outcomes** using real data from Basketball Reference. Designed specifically for **Windows Excel**, it features Power Query connections, dynamic roster logic, and advanced statistical formulas — all within Excel.
 
----
+----
 
 ## 🔧 Key Features
 
