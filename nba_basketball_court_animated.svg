@@ -1,0 +1,419 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1400" height="1000"
+     viewBox="0 0 1400 1000"
+     role="img"
+     aria-label="Animated NBA basketball player prop and game simulation dashboard">
+
+<title>NBA Player Prop and Game Simulation Model</title>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07111f"/>
+    <stop offset="1" stop-color="#142c45"/>
+  </linearGradient>
+
+  <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#dba66b"/>
+    <stop offset=".5" stop-color="#c98b4e"/>
+    <stop offset="1" stop-color="#e7b579"/>
+  </linearGradient>
+
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#18344f"/>
+    <stop offset="1" stop-color="#0b2034"/>
+  </linearGradient>
+
+  <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffb35c"/>
+    <stop offset="1" stop-color="#d96b27"/>
+  </linearGradient>
+
+  <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#2879e8"/>
+    <stop offset="1" stop-color="#62d8ff"/>
+  </linearGradient>
+
+  <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#159e78"/>
+    <stop offset="1" stop-color="#7cf4b5"/>
+  </linearGradient>
+
+  <style>
+    text {font-family:Arial,Helvetica,sans-serif}
+    .heading {fill:#ffffff;font-weight:bold}
+    .muted {fill:#b4cbde}
+    .panel {fill:url(#panel);stroke:#4b789a;stroke-width:1.5}
+  </style>
+
+  <g id="ball">
+    <circle r="21" fill="url(#orange)" stroke="#ffcb89" stroke-width="2"/>
+    <path d="M-21 0H21 M0 -21V21
+             M-15 -15Q6 0 -15 15
+             M15 -15Q-6 0 15 15"
+          fill="none" stroke="#643018" stroke-width="2.5"/>
+  </g>
+</defs>
+
+<!-- BACKGROUND -->
+<rect width="1400" height="1000" rx="22" fill="url(#bg)"/>
+
+<!-- HEADER -->
+<g transform="translate(65 65)">
+  <use href="#ball"/>
+  <animateTransform attributeName="transform"
+                    type="translate"
+                    values="65 65;65 52;65 65"
+                    dur="1.8s" repeatCount="indefinite"/>
+</g>
+
+<text x="105" y="63" class="heading" font-size="34">
+  NBA PLAYER PROP &amp; GAME SIMULATION MODEL
+</text>
+
+<text x="106" y="93" fill="#9fd8f4" font-size="17">
+  Excel • Power Query • Basketball Reference • Injury-Adjusted Modeling
+</text>
+
+<!-- TOP KPI CARDS -->
+<rect x="25" y="120" width="320" height="108" rx="14" class="panel"/>
+<rect x="360" y="120" width="320" height="108" rx="14" class="panel"/>
+<rect x="695" y="120" width="320" height="108" rx="14" class="panel"/>
+<rect x="1030" y="120" width="345" height="108" rx="14" class="panel"/>
+
+<text x="45" y="152" fill="#91d8ff" font-size="16" font-weight="bold">
+  GAME SIMULATIONS
+</text>
+<text x="45" y="201" fill="#7cf4b5" font-size="42" font-weight="bold">
+  1,000+
+</text>
+
+<text x="380" y="152" fill="#91d8ff" font-size="16" font-weight="bold">
+  PLAYER PROP TARGETS
+</text>
+<text x="380" y="194" class="heading" font-size="27">
+  10+ • 15+ • 20+ • 40+
+</text>
+<text x="380" y="215" class="muted" font-size="13">
+  Points scored
+</text>
+
+<text x="715" y="152" fill="#91d8ff" font-size="16" font-weight="bold">
+  INJURY-ADJUSTED ROSTERS
+</text>
+<text x="715" y="195" fill="#7cf4b5" font-size="28" font-weight="bold">
+  AUTOMATED
+</text>
+
+<text x="1050" y="152" fill="#91d8ff" font-size="16" font-weight="bold">
+  DATA REFRESH
+</text>
+<text x="1050" y="195" class="heading" font-size="29">
+  POWER QUERY
+</text>
+
+<!-- BASKETBALL COURT -->
+<rect x="25" y="246" width="820" height="420"
+      rx="16" fill="url(#wood)" stroke="#f7d3a5" stroke-width="3"/>
+
+<!-- WOOD FLOOR LINES -->
+<g stroke="#ad7544" stroke-width="1" opacity=".35">
+  <path d="M80 246V666 M150 246V666 M220 246V666
+           M290 246V666 M360 246V666 M430 246V666
+           M500 246V666 M570 246V666 M640 246V666
+           M710 246V666 M780 246V666"/>
+</g>
+
+<!-- COURT BOUNDARIES -->
+<rect x="45" y="266" width="780" height="380"
+      fill="none" stroke="#fff4de" stroke-width="4"/>
+
+<!-- CENTER COURT -->
+<line x1="435" y1="266" x2="435" y2="646"
+      stroke="#fff4de" stroke-width="4"/>
+
+<circle cx="435" cy="456" r="68"
+        fill="none" stroke="#fff4de" stroke-width="4"/>
+
+<circle cx="435" cy="456" r="38"
+        fill="none" stroke="#fff4de" stroke-width="2"/>
+
+<!-- LEFT PAINT -->
+<rect x="45" y="370" width="150" height="172"
+      fill="#bd7942" fill-opacity=".45"
+      stroke="#fff4de" stroke-width="4"/>
+
+<circle cx="195" cy="456" r="62"
+        fill="none" stroke="#fff4de" stroke-width="3"/>
+
+<!-- RIGHT PAINT -->
+<rect x="675" y="370" width="150" height="172"
+      fill="#bd7942" fill-opacity=".45"
+      stroke="#fff4de" stroke-width="4"/>
+
+<circle cx="675" cy="456" r="62"
+        fill="none" stroke="#fff4de" stroke-width="3"/>
+
+<!-- THREE POINT ARCS -->
+<path d="M45 315H100
+         A210 210 0 0 1 100 597
+         H45"
+      fill="none" stroke="#fff4de" stroke-width="4"/>
+
+<path d="M825 315H770
+         A210 210 0 0 0 770 597
+         H825"
+      fill="none" stroke="#fff4de" stroke-width="4"/>
+
+<!-- BASKETS -->
+<g>
+  <rect x="57" y="421" width="8" height="70"
+        fill="#ffffff"/>
+  <ellipse cx="83" cy="456" rx="17" ry="6"
+           fill="none" stroke="#ff5b35" stroke-width="5"/>
+
+  <rect x="805" y="421" width="8" height="70"
+        fill="#ffffff"/>
+  <ellipse cx="787" cy="456" rx="17" ry="6"
+           fill="none" stroke="#ff5b35" stroke-width="5"/>
+</g>
+
+<!-- ANIMATED BASKETBALL -->
+<g>
+  <animateMotion dur="5s" repeatCount="indefinite"
+                 path="M435 456 Q540 300 690 420 Q755 360 787 456"/>
+  <use href="#ball"/>
+  <animateTransform attributeName="transform"
+                    type="rotate" from="0" to="720"
+                    dur="5s" additive="sum"
+                    repeatCount="indefinite"/>
+</g>
+
+<!-- COURT LABEL -->
+<rect x="278" y="282" width="315" height="44"
+      rx="9" fill="#071c30" opacity=".85"/>
+
+<text x="435" y="310" text-anchor="middle"
+      fill="#ffffff" font-size="19" font-weight="bold">
+  BASKETBALL SIMULATION ENGINE
+</text>
+
+<!-- SCOREBOARD PANEL -->
+<rect x="863" y="246" width="512" height="420"
+      rx="16" class="panel"/>
+
+<text x="885" y="282" class="heading" font-size="22">
+  GAME OUTCOME SCOREBOARD
+</text>
+
+<rect x="884" y="302" width="470" height="150"
+      rx="12" fill="#050e18" stroke="#496982" stroke-width="2"/>
+
+<text x="963" y="341" text-anchor="middle"
+      fill="#9edcff" font-size="18" font-weight="bold">
+  TEAM A
+</text>
+
+<text x="1275" y="341" text-anchor="middle"
+      fill="#8df6bc" font-size="18" font-weight="bold">
+  TEAM B
+</text>
+
+<text x="963" y="408" text-anchor="middle"
+      fill="#63d5ff" font-size="52" font-weight="bold">
+  57%
+</text>
+
+<text x="1275" y="408" text-anchor="middle"
+      fill="#80f6b9" font-size="52" font-weight="bold">
+  43%
+</text>
+
+<text x="1118" y="396" text-anchor="middle"
+      fill="#ffffff" font-size="24">
+  VS
+</text>
+
+<text x="885" y="486" fill="#ffffff"
+      font-size="18" font-weight="bold">
+  WIN PROBABILITY SIMULATION
+</text>
+
+<rect x="885" y="506" width="469" height="32"
+      rx="8" fill="#163047"/>
+
+<rect x="885" y="506" width="267" height="32"
+      rx="8" fill="url(#blue)">
+  <animate attributeName="width"
+           values="0;267;267"
+           keyTimes="0;.55;1"
+           dur="8s" repeatCount="indefinite"/>
+</rect>
+
+<rect x="1152" y="506" width="202" height="32"
+      rx="8" fill="url(#green)"/>
+
+<text x="885" y="579" class="muted" font-size="15">
+  Simulated matchups update team win probabilities
+</text>
+
+<text x="885" y="608" fill="#80f6b9" font-size="16">
+  1,000+ simulated game outcomes
+</text>
+
+<text x="885" y="638" fill="#9fbad0" font-size="12">
+  Illustrative scoreboard — not a live NBA prediction
+</text>
+
+<!-- PLAYER PROP PANEL -->
+<rect x="25" y="685" width="820" height="280"
+      rx="16" class="panel"/>
+
+<text x="47" y="722" class="heading" font-size="23">
+  PLAYER PROP SCORING PROBABILITIES
+</text>
+
+<text x="47" y="747" class="muted" font-size="14">
+  Example probability distribution for player scoring thresholds
+</text>
+
+<g stroke="#345875" stroke-width="1">
+  <path d="M145 788H805 M145 825H805 M145 862H805 M145 899H805"/>
+</g>
+
+<g fill="#a8c5db" font-size="12">
+  <text x="91" y="792">100%</text>
+  <text x="98" y="829">75%</text>
+  <text x="98" y="866">50%</text>
+  <text x="98" y="903">25%</text>
+</g>
+
+<!-- PROBABILITY BARS -->
+<rect x="190" y="795" width="92" height="133"
+      rx="6" fill="url(#blue)">
+  <animate attributeName="height"
+           values="0;133;133"
+           keyTimes="0;.4;1"
+           dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="y"
+           values="928;795;795"
+           keyTimes="0;.4;1"
+           dur="9s" repeatCount="indefinite"/>
+</rect>
+
+<rect x="340" y="815" width="92" height="113"
+      rx="6" fill="url(#blue)">
+  <animate attributeName="height"
+           values="0;113;113"
+           keyTimes="0;.45;1"
+           dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="y"
+           values="928;815;815"
+           keyTimes="0;.45;1"
+           dur="9s" repeatCount="indefinite"/>
+</rect>
+
+<rect x="490" y="849" width="92" height="79"
+      rx="6" fill="url(#blue)">
+  <animate attributeName="height"
+           values="0;79;79"
+           keyTimes="0;.5;1"
+           dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="y"
+           values="928;849;849"
+           keyTimes="0;.5;1"
+           dur="9s" repeatCount="indefinite"/>
+</rect>
+
+<rect x="640" y="915" width="92" height="13"
+      rx="6" fill="url(#blue)">
+  <animate attributeName="height"
+           values="0;13;13"
+           keyTimes="0;.55;1"
+           dur="9s" repeatCount="indefinite"/>
+  <animate attributeName="y"
+           values="928;915;915"
+           keyTimes="0;.55;1"
+           dur="9s" repeatCount="indefinite"/>
+</rect>
+
+<g fill="#ffffff" font-size="17" font-weight="bold"
+   text-anchor="middle">
+  <text x="236" y="786">80%</text>
+  <text x="386" y="806">68%</text>
+  <text x="536" y="840">48%</text>
+  <text x="686" y="906">8%</text>
+</g>
+
+<g fill="#ffffff" font-size="15" text-anchor="middle">
+  <text x="236" y="949">10+ PTS</text>
+  <text x="386" y="949">15+ PTS</text>
+  <text x="536" y="949">20+ PTS</text>
+  <text x="686" y="949">40+ PTS</text>
+</g>
+
+<!-- INJURY AND EXCEL WORKFLOW -->
+<rect x="863" y="685" width="512" height="280"
+      rx="16" class="panel"/>
+
+<text x="885" y="722" class="heading" font-size="22">
+  INJURY-ADJUSTED EXCEL MODEL
+</text>
+
+<text x="885" y="747" class="muted" font-size="14">
+  Automated roster changes and statistical updates
+</text>
+
+<rect x="885" y="770" width="470" height="49"
+      rx="8" fill="#102a41" stroke="#547f9f"/>
+
+<text x="905" y="800" fill="#ffffff"
+      font-size="17" font-weight="bold">
+  CBS SPORTS INJURY REPORT
+</text>
+
+<rect x="885" y="834" width="470" height="49"
+      rx="8" fill="#102a41" stroke="#547f9f"/>
+
+<text x="905" y="864" fill="#ffffff"
+      font-size="17" font-weight="bold">
+  POWER QUERY + ROSTER ADJUSTMENT
+</text>
+
+<rect x="885" y="898" width="470" height="49"
+      rx="8" fill="#10362e" stroke="#5be5a4"/>
+
+<text x="905" y="928" fill="#b9ffda"
+      font-size="17" font-weight="bold">
+  UPDATED PLAYER + GAME PROJECTIONS
+</text>
+
+<!-- ANIMATED WORKFLOW INDICATORS -->
+<g fill="#7ef5b9">
+  <circle cx="1327" cy="794" r="6">
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1327" cy="858" r="6">
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             begin="1s"
+             dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="1327" cy="922" r="6">
+    <animate attributeName="opacity"
+             values=".2;1;.2"
+             begin="2s"
+             dur="3s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<!-- FOOTNOTE -->
+<text x="28" y="989" fill="#9ab8cd" font-size="11">
+  Illustrative probabilities shown for demonstration. Actual predictions depend on refreshed player data, injury reports, and selected matchups.
+</text>
+
+</svg>
